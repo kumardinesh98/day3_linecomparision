@@ -14,9 +14,28 @@ public class LineComparision {
 		int y1 = scanner.nextInt();
 		System.out.println("enter the value of y2");
 		int y2 = scanner.nextInt();
+	
+		System.out.println("enter the value of a1");
+		int a1 = scanner.nextInt();
+		System.out.println("enter the value of a2");
+		int a2 = scanner.nextInt();
+		System.out.println("enter the value of b1");
+		int b1 = scanner.nextInt();
+		System.out.println("enter the value of b2");
+		int b2 = scanner.nextInt();
 		
-		double length = Math.sqrt(Math.pow((x2-x1),2) + Math.pow((y2-y1),2));
-		System.out.println("length = " + length);
+		double length1 = Math.sqrt(Math.pow((x2-x1),2) + Math.pow((y2-y1),2));
+		System.out.println("length = " + length1);
+		
+		double length2 = Math.sqrt(Math.pow((a2-a1),2) + Math.pow((b2-b1),2));
+		System.out.println("length = " + length2);
+		
+		if (length1 == length2) {
+			System.out.println("two lengths are equal");
+		}
+		else {
+			System.out.println("two lengths are not equal ");
+		}
 				
 	}
 
